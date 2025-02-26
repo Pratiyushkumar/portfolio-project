@@ -1,8 +1,22 @@
 {
   "name": "portfolio",
+  "description": "Personal portfolio website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
+  "author": "Pratiyush <pratiyush.tech@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pratiyushkumar/portfolio-project"
+  },
+  "keywords": [
+    "react",
+    "pratiyush",
+    "portfolio",
+    "vite",
+    "tailwindcss"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,6 +25,12 @@
     "format": "prettier --write .",
     "preview": "vite preview",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -41,11 +61,5 @@
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.2",
     "vite": "^6.1.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
   }
 }
